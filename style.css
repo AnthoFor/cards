@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    height: 100vh;
+    margin: auto;
+    background: rgb(129,169,170);
+    background: linear-gradient(40deg, rgba(129,169,170,1) 0%, rgba(255,255,255,1) 100%); 
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planCards, .planCardsGold {
+    width: 155px;
+    height: 315px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    border-radius: 10px;
+    box-shadow: 9px 15px 14px 3px rgba(0,0,0,0.75);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.planCardsGold {
+    background: rgb(255,197,45);
+    background: linear-gradient(152deg, rgba(255,197,45,1) 0%, rgba(135,108,47,1) 70%, rgba(135,108,47,1) 85%, rgba(242,222,28,1) 100%);
+    color: white;
+}
+
+.planCards {
+    background-color: white;
+    color: #7C7076;
+}
+h2, h1, p {
+    margin: auto 10% auto 10%;
+    padding: 5px;
+}
+h2 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    color: inherit;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+h1 {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.4em;
+    color:#273966;
+}
+p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 0.6em;
+    color: inherit;
+    line-height: 1.5em;
+}
+img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.planCards:hover, .planCardsGold:hover {
+    transform: scale(1.1);
+}
